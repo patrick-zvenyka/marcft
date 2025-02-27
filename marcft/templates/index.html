@@ -1,0 +1,258 @@
+{% extends 'components/main.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block content %}    
+    
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url('/static/img/slide/first.jpg')">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Marcft</span></h2>
+                            <p class="animate__animated animate__fadeInUp">Masvingo Association Of Residential Care Facilities Trust</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url('/static/img/slide/second.jpg')">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Our Mission</h2>
+                            <p class="animate__animated animate__fadeInUp">To promote holistic child care and production of responsible citizens through enhanced networking and coordination, capacity strengthening, mobilizing resources and lobby and advocacy.</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url('static/img/slide/third.jpg')">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Our Vision</h2>
+                            <p class="animate__animated animate__fadeInUp">To be the most Vibrant association of Residential Care Facilities for the provision of holistic child care.</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <h2>Background Check </h2>
+                        <h3>Our main activities</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <i class="bi bi-diagram-3"></i>
+                            <h4><a href="{% url 'services' %}">Networking and Coordination</a></h4>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-award"></i>
+                            <h4><a href="{% url 'services' %}">Capacity Enhancement</a></h4>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-bag"></i>
+                            <h4><a href="{% url 'services' %}">Lobbying and Advocacy</a></h4>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-briefcase"></i>
+                            <h4><a href="{% url 'services' %}">Resource Mobilization</a></h4>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-bar-chart"></i>
+                            <h4><a href="{% url 'services' %}">Child Development and Integration</a></h4>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-calendar2-check"></i>
+                            <h4><a href="{% url 'services' %}">Street Child Programing</a></h4>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+
+                        <ul id="portfolio-flters">
+                            <h2>Our Activites</h2>
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-app">Kids Programs</li>
+                            <li data-filter=".filter-card">Training Programs</li>
+                            <li data-filter=".filter-web">Donations</li>
+                            <li data-filter=".filter-edu">Education</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container">
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/clothes.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Donations</h4>
+                                <p>Clothes</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/chicks.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Donations</h4>
+                                <p>Birds</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/kits.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Donations</h4>
+                                <p>Sanitizers & Masks</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/mbira.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Kids Programs</h4>
+                                <p>Musical Feastival</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-edu">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/M Hugo.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Education</h4>
+                                <p>Students at M. Hugo</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-edu">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/memo.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Education</h4>
+                                <p>MOU at RCU</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/skills dev.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Training Program</h4>
+                                <p>Skills Developed at Shekinah Glory</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/trauma.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Training Program</h4>
+                                <p>Trauma Management training</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="/static/img/portfolio/support.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Training Program</h4>
+                                <p>Counseling Session</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    {% endblock %}
+

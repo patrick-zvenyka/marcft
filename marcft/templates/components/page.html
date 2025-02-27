@@ -1,0 +1,12 @@
+<div class="blog-pagination">
+    <ul class="justify-content-center">
+        {% for p in posts.paginator.page_range %}
+        {% if posts.number == p %}
+        <li><a href="?page={{p}}">{{p}}</a></li>
+        
+        {%else%}
+      <li><a href="?page={{p}}">{{p}}</a></li>
+      {%endif%}
+      {%endfor%}
+    </ul>
+  </div>

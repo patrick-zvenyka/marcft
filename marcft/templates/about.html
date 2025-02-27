@@ -1,0 +1,65 @@
+{% extends 'components/main.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block content %}  
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>About</h2>
+                    <ol>
+                        <li><a href="{%url 'index'%}">Home</a></li>
+                        <li>About</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <h2>Background Check </h2>
+                        <h3>Here is the background of our organization</h3>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            Masvingo Association of Residential Care Facilities Trust (MARCFT) is a networking and coordinating body of residential child care facilities, Children’s homes, schools for children living with disabilities, foster homes, old people’s homes as well as
+                            children living in the streets operating in Masvingo and Midlands Provinces. It was started in 2015 by existing Residential Child Care Facilities withthe aim of enhancing and upgrading the operations of Children’s Homes and
+                            their compliance to their registration provisions.
+                        </p>
+                        <br>
+                        <p>The Association is a membership based community of Children’s Homes and other affiliates as follows:</p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> Any registered Residential child care facility (Children’s Home) interested in subscribing to the Association’s aim and willing to abide by the rules of the Association.
+                            </li>
+                            <li><i class="ri-check-double-line"></i>Membership of the Masvingo Association of Residential Care Facilities Trust (MARCFT) shall also be open to known but yet registered residential child care facilities (Children’s Homes).</li>
+                            <li><i class="ri-check-double-line"></i> Legal Forster Homes with at least three children shall also be eligible members of the MARCFT.</li>
+                            <li><i class="ri-check-double-line"></i> Affiliate member status shall also be accorded to: Upcoming Residential Child Care Facilities (Children’s Homes, Old people’s Homes, Community based Child Care Organizations</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+
+
+
+    </main>
+    <!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    {% endblock %}
