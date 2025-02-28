@@ -1,12 +1,13 @@
-from django.conf import settings
+
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import static
 from django.views.static import serve
 from django.urls import re_path as url
+from django.conf import settings
 
 urlpatterns = [
-    path('grappelli/', include('grappelli.urls')), # grappelli URLS
+    #path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
     path('', include('base.urls')),
     url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}), 

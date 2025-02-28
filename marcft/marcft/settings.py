@@ -3,8 +3,6 @@ from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-sh_(cer@1xq8=n_v_u%kyly82lv2*d%mi3*vp@gm8#8(sr9#q6'
@@ -12,21 +10,19 @@ SECRET_KEY = 'django-insecure-sh_(cer@1xq8=n_v_u%kyly82lv2*d%mi3*vp@gm8#8(sr9#q6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'grappelli',
-    'ckeditor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'base'
+    'base',
+    'grappelli',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

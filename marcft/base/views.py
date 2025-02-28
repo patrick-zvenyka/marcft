@@ -7,19 +7,19 @@ from django.core.paginator import Paginator,PageNotAnInteger,EmptyPage
 # Create your views here.
 
 def home(request):
-    return render (request, 'index.html')
+    return render (request, 'index.html', {'title':'Marcft - Home'})
 
 def team(request):
-    return render(request, 'team.html')
+    return render(request, 'team.html', {'title':'Marcft - Our Team'})
 
 def services(request):
-    return render(request, 'services.html')
+    return render(request, 'services.html', {'title':'Marcft - Our Activities'})
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'about.html', {'title':'Marcft - About Us'})
 
 def contact(request):
-    return render(request, 'contact.html')
+    return render(request, 'contact.html', {'title':'Marcft - Contact Us'})
 
 
 def blog(request):
@@ -42,6 +42,7 @@ def blog(request):
         'posts' : posts,
         'op_obj': op_obj,
         'data':data,
+        'title':'Marcft - Updates',
     }
     return render(request, 'blog.html', context)
 
@@ -50,6 +51,7 @@ def singleblog(request, id):
     context = {
         
         'post' : post,
+        'title':'Marcft - Update'
        
     }
 
